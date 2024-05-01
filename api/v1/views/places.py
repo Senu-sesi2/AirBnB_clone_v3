@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ new view for Place objects that handles all default RESTFul API actions:"""
 from api.v1.views import app_views
@@ -122,4 +121,3 @@ def updates_place(place_id):
                 obj.longitude = request.json['longitude']
     storage.save()
     return jsonify(place_obj[0]), 200
-
